@@ -1,7 +1,6 @@
 import shutil
 import nft_data
 import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # def load_nft_data(base_dir='artists'):
 #     nft_data = []
@@ -48,6 +47,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 def generate_html_files(nft_data):
     # Create media directory if not exist
     os.makedirs('media', exist_ok=True)
+    os.makedirs('html_files', exist_ok=True)
 
     # Iterate over the NFT data
     for nft in nft_data:
