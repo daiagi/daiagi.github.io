@@ -21,7 +21,6 @@
       height: 1080px;
       background: linear-gradient(180deg, #852894 0%, #3099E5 100%);
       overflow: hidden;
-      /* Add this to hide any part of the video that is outside the square */
 
 
     }
@@ -48,6 +47,7 @@
       line-height: 72px;
       color: #FFFFFF;
       text-transform: uppercase;
+      margin: 0;
     }
 
     #additional-info {
@@ -63,9 +63,12 @@
     }
 
     #qr-code img {
-      width: 100%; /* Add this */
-      height: 100%; /* Add this */
-      object-fit: contain; /* Add this */
+      width: 100%;
+      /* Add this */
+      height: 100%;
+      /* Add this */
+      object-fit: contain;
+      /* Add this */
     }
 
     #text-info {
@@ -98,35 +101,28 @@
 <body>
   <div id="container">
     <div id="square">
-      <video controls autoplay loop muted>
-        <source src="../media/Arcade World.mp4" type="video/mp4">Your browser does not support the video tag.
-      </video>
-
+      <img src="../media/002.png" alt="002" style="width:100%; height:100%; object-fit: contain;" />
     </div>
     <section id="section">
-      <p id="artwork-name">Arcade World</p>
+      <p id="artwork-name">002</p>
       <div id="additional-info">
         <div id="qr-code">
-          <img src="../media/QR Code_Arcade World.png">
-
+          <img src="../media/qr002.png">
         </div>
         <div id="text-info">
-          <p>ARTIST: Bastien</p>
-          <p>COLLECTION: bastien-editions</p>
+          <p>ARTIST: Georgi Chertovskee</p>
+          <p>COLLECTION: KODA CANARY</p>
           <p>EDITION: 1/1</p>
         </div>
       </div>
       <div id="description">
         <p>
           DESCRIPTION<br />
-          Welcome to the Arcade world, your after-school haven of neon dreams. Lose yourself in the maze of lights and
-          sounds, leaving responsibilities behind. Kids run around playing games and goofing off. Schoolmates, friends,
-          crushes, and enemies all come in peace, ready to spend their pocket money. After a long school day, this
-          blissful experience is yours to enjoy for as long as you can.
+          This canaries embodies author’s unique perspective on the contemporary world. Each card serves as a time capsule, capturing the essence of this era's artistic expression, wit, and cultural nuances. As future collectors peruse these pieces, they will witness a visual representation of the spirit of our times.
         </p>
       </div>
       <div id="additional-image">
-        <img src="../RMRK_bw_1200px 1.svg" />
+        <img src="RMRK_bw_1200px 1.svg" />
       </div>
     </section>
 
