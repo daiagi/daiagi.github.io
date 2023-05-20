@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      margin: 0 auto;
+      width: 1080px;
+      height: 1920px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #square {
+      width: 100%;
+      height: 1080px;
+      background: linear-gradient(180deg, #852894 0%, #3099E5 100%);
+      overflow: hidden;
+      /* Add this to hide any part of the video that is outside the square */
+
+
+    }
+
+    #square video {
+      width: 100%;
+      /* Add this */
+      height: 100%;
+      /* Add this */
+      object-fit: cover;
+      /* Add this */
+    }
+
+    #section {
+      background-color: #000;
+      padding: 80px;
+    }
+
+    #artwork-name {
+      font-family: 'Mattone';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 72px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    }
+
+    #additional-info {
+      margin-top: 46px;
+      display: flex;
+      background-color: #000;
+
+    }
+
+    #qr-code {
+      width: 200px;
+      height: 200px;
+    }
+
+    #qr-code img {
+      width: 100%; /* Add this */
+      height: 100%; /* Add this */
+      object-fit: contain; /* Add this */
+    }
+
+    #text-info {
+      margin-left: 70px;
+      color: #FFFFFF;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    #text-info p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    #description {
+      margin-top: 55px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="square">
+      <video controls autoplay loop muted>
+        <source src="../media/Arcade World.mp4" type="video/mp4">Your browser does not support the video tag.
+      </video>
+
+    </div>
+    <section id="section">
+      <p id="artwork-name">Arcade World</p>
+      <div id="additional-info">
+        <div id="qr-code">
+          <img src="../media/QR Code_Arcade World.png">
+
+        </div>
+        <div id="text-info">
+          <p>ARTIST: Bastien</p>
+          <p>COLLECTION: bastien-editions</p>
+          <p>EDITION: 1/1</p>
+        </div>
+      </div>
+      <div id="description">
+        <p>
+          DESCRIPTION<br />
+          Welcome to the Arcade world, your after-school haven of neon dreams. Lose yourself in the maze of lights and
+          sounds, leaving responsibilities behind. Kids run around playing games and goofing off. Schoolmates, friends,
+          crushes, and enemies all come in peace, ready to spend their pocket money. After a long school day, this
+          blissful experience is yours to enjoy for as long as you can.
+        </p>
+      </div>
+      <div id="additional-image">
+        <img src="../RMRK_bw_1200px 1.svg" />
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>
