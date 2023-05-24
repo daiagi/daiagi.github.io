@@ -44,22 +44,21 @@ def print_progress_bar(iteration, total, prefix='', suffix='', length=100, fill=
 
 # Iterate over all HTML files
 for i, html_file     in enumerate(html_files):
+
+# Open the HTML file in Chrome
+    driver.get(f"file://{os.path.join(os.getcwd(), html_dir, html_file)}")
+
+    
+    time.sleep(2)  # Give it a moment to load
+
+    # Take a screenshot and save it
     screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.png")
-    if not os.path.exists(screenshot_path):
-    # Open the HTML file in Chrome
-        driver.get(f"file://{os.path.join(os.getcwd(), html_dir, html_file)}")
+    driver.save_screenshot(screenshot_path)
 
-        
-        time.sleep(2)  # Give it a moment to load
-
-        # Take a screenshot and save it
-        screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.png")
-        driver.save_screenshot(screenshot_path)
-
-        # Open the screenshot, rotate it, and save it again
-        img = Image.open(screenshot_path)
-        img_rotated = img.rotate(90, expand=True)
-        img_rotated.save(screenshot_path)
+    # Open the screenshot, rotate it, and save it again
+    img = Image.open(screenshot_path)
+    img_rotated = img.rotate(90, expand=True)
+    img_rotated.save(screenshot_path)
 
     print_progress_bar(i+1, len(html_files), prefix='Progress:', suffix='Complete', length=50)
 
