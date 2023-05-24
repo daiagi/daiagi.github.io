@@ -49,7 +49,7 @@ for i, html_file     in enumerate(html_files):
     driver.get(f"file://{os.path.join(os.getcwd(), html_dir, html_file)}")
 
     
-    time.sleep(2)  # Give it a moment to load
+    time.sleep(1)  # Give it a moment to load
 
     # Take a screenshot and save it
     screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.png")
