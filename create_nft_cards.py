@@ -44,19 +44,16 @@ def generate_html_for_nft_data(artist, collection, data):
         html = html.replace('ARTIST_NAME', artist)
 
         # Replace the placeholders in the template with the actual data
-        if nft.get('description', '') != '':
-            html = html.replace('DESCRIPTION_CONTENT', nft['description'])
-        else:
-            start = html.find('<div id="description">')
-            end = html.find('</div>', start) + len('</div>')
-            html = html[:start] + html[end:]
+
+        html = html.replace('DESCRIPTION_CONTENT', nft.get('description', ''))
+
 
         # If the collection is empty, remove the entire line
         collection = data.get('collection') or nft.get('collection') or collection
         if collection != '':
             html = html.replace('COLLECTION_NAME', collection)
         else:
-            html = html.replace('<p>COLLECTION: COLLECTION_NAME</p>', '')
+            html = html.replace('<div>\n<p class="attributes-title">Collection</p>\n<p class="attribute">COLLECTION_NAME</p>\n</div>', '')
 
         html = html.replace('QR_CODE_PATH', template_qr_path)
 
