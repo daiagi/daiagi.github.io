@@ -1,8 +1,7 @@
 html_files
-html_files/*
 media
-media
+
+screenshots
 __pycache__
-__pycache__/*
 .vscode
 
