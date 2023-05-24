@@ -11,6 +11,10 @@
       padding: 0;
     }
 
+    p {
+      margin: 0;
+    }
+
     #container {
       margin: 0 auto;
       width: 1080px;
@@ -30,6 +34,18 @@
 
     }
 
+    .font-family-unbounded {
+      font-family: 'Unbounded';
+    }
+
+    .font-family-inter {
+      font-family: 'Inter';
+    }
+
+    .has-text-white {
+      color: #FFFFFF;
+    }
+
 
 
     #section {
@@ -43,33 +59,26 @@
     }
 
     #artwork-name {
-      font-family: 'Unbounded';
-      font-style: normal;
-      font-weight: 400;
       font-size: 54px;
       line-height: 67px;
-      color: #FFFFFF;
+    }
+
+    #description {
+      font-size: 21px;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.7);
     }
 
     #additional-info {
-      margin-top: 46px;
       display: flex;
       background-color: #000;
+      margin-top: 40px;
+      justify-content: space-between;
 
-    }
-
-    p {
-      margin: 0;
     }
 
     #qr-and-details {
       display: flex;
-    }
-
-    #qr-code-img {
-      width: 137px;
-      height: 137px;
-      object-fit: contain;
     }
 
     #text-info {
@@ -79,46 +88,30 @@
       gap: 16px;
     }
 
-
-
-
     .attributes-title {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
       font-size: 21px;
       line-height: 25px;
       text-transform: capitalize;
       margin-bottom: 4px;
-
-
       color: rgba(255, 255, 255, 0.7);
     }
 
     .attribute {
-      font-family: 'Unbounded';
-      font-style: normal;
-      font-weight: 400;
       font-size: 25px;
       line-height: 31px;
-      color: #FFFFFF;
     }
 
-    #description {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
-      color: rgba(255, 255, 255, 0.7);
+
+
+    #logo {
+      align-self: flex-end;
     }
 
-    #additional-info {
-      margin-top: 36px;
-      display: flex;
-      justify-content: space-between;
+    #qr-code-img {
+      width: 137px;
+      height: 137px;
+      object-fit: contain;
     }
-
   </style>
 </head>
 
@@ -128,8 +121,8 @@
       MEDIA_CONTENT
     </div>
     <section id="section">
-      <p id="artwork-name">ARTWORK_NAME</p>
-      <div id="description">
+      <p id="artwork-name" class="font-family-unbounded has-text-white">ARTWORK_NAME</p>
+      <div id="description" class="font-family-inter">
         DESCRIPTION_CONTENT
       </div>
       <div id="additional-info">
@@ -137,12 +130,12 @@
           <img id="qr-code-img" src="QR_CODE_PATH">
           <div id="text-info">
             <div>
-              <p class="attributes-title">Artist</p>
-              <p class="attribute">ARTIST_NAME</p>
+              <p class="attributes-title font-family-inter">Artist</p>
+              <p class="attribute font-family-unbounded has-text-white">ARTIST_NAME</p>
             </div>
             <div>
-              <p class="attributes-title">Collection</p>
-              <p class="attribute">COLLECTION_NAME</p>
+              <p class="attributes-title font-family-inter">Collection</p>
+              <p class="attribute font-family-unbounded has-text-white">COLLECTION_NAME</p>
             </div>
 
           </div>
