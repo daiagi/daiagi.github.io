@@ -1,6 +1,7 @@
 import shutil
 import os
 import nft_data
+import re
 from logo_map import logo_map
 
 
@@ -50,10 +51,12 @@ def generate_html_for_nft_data(artist, collection, data):
 
         # If the collection is empty, remove the entire line
         collection = data.get('collection') or nft.get('collection') or collection
+
         if collection != '':
             html = html.replace('COLLECTION_NAME', collection)
         else:
-            html = html.replace('<div>\n<p class="attributes-title">Collection</p>\n<p class="attribute">COLLECTION_NAME</p>\n</div>', '')
+            # Remove the div starting from its id until its end
+            html = re.sub('<div id=\"collection-div\">[\s\S]*?</div>', '', html)
 
         html = html.replace('QR_CODE_PATH', template_qr_path)
 
@@ -76,7 +79,18 @@ def generate_html_for_nft_data(artist, collection, data):
         html = html.replace('MEDIA_CONTENT', media_tag)
 
         # Write the populated HTML to a new file
-        html_file_name = nft["artwork_name"].replace('#', '_')  # modify filename here
+        base_html_file_name = nft["artwork_name"].replace("#", "_")
+        html_file_name = base_html_file_name  # modify filename here
+        html_file_path = f'html_files/{html_file_name}.html'
+
+
+        # Check if the file already exists, and append a number to the filename
+        counter = 1
+        while os.path.exists(html_file_path):
+            html_file_name = f'{base_html_file_name}_{counter}'  # modify filename here
+            html_file_path = f'html_files/{html_file_name}.html'
+            counter += 1
+
 
         with open(f'html_files/{html_file_name}.html', 'w') as file:
             file.write(html)
