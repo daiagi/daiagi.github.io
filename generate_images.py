@@ -9,57 +9,66 @@ import os
 import time
 from PIL import Image
 
-# Setup Chrome options
-chrome_options = Options()
-chrome_options.add_argument("--headless")  # Ensure GUI is off
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
+def screenshot_html_files(skip_existing):
+    # Setup Chrome options
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # Ensure GUI is off
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
 
-# Set the browser window size
-height = 1920
-width = 1080
-chrome_options.add_argument(f"--window-size={width}x{height}")
+    # Set the browser window size
+    height = 1920
+    width = 1080
+    chrome_options.add_argument(f"--window-size={width}x{height}")
 
-# Set up the webdriver
-webdriver_service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+    # Set up the webdriver
+    webdriver_service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
 
-# The directory where the HTML files are stored
-html_dir = "html_files"
+    # The directory where the HTML files are stored
+    html_dir = "html_files"
 
-# The directory where to save the screenshots
-screenshot_dir = "screenshots"
-os.makedirs(screenshot_dir, exist_ok=True)
+    # The directory where to save the screenshots
+    screenshot_dir = "screenshots"
+    os.makedirs(screenshot_dir, exist_ok=True)
 
-html_files = [file for file in os.listdir(html_dir) if file.endswith(".html")]
+    html_files = [file for file in os.listdir(html_dir) if file.endswith(".html")]
 
-# Function to print/ update the progress bar
-def print_progress_bar(iteration, total, prefix='', suffix='', length=100, fill='█'):
-    percent = ("{0:.1f}").format(100 * (iteration / float(total)))
-    filled_length = int(length * iteration // total)
-    bar = fill * filled_length + '-' * (length - filled_length)
-    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end='\r')
-    if iteration == total:
-        print()
+    # Function to print/ update the progress bar
+    def print_progress_bar(iteration, total, prefix='', suffix='', length=100, fill='█'):
+        percent = ("{0:.1f}").format(100 * (iteration / float(total)))
+        filled_length = int(length * iteration // total)
+        bar = fill * filled_length + '-' * (length - filled_length)
+        print(f'\r{prefix} |{bar}| {percent}% {suffix}', end='\r')
+        if iteration == total:
+            print()
 
-# Iterate over all HTML files
-for i, html_file     in enumerate(html_files):
+    # Iterate over all HTML files
+    for i, html_file in enumerate(html_files):
 
-# Open the HTML file in Chrome
-    driver.get(f"file://{os.path.join(os.getcwd(), html_dir, html_file)}")
+        screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.png")
 
-    
-    time.sleep(1)  # Give it a moment to load
+        # Check if screenshot exists and skip if necessary
+        if skip_existing and os.path.exists(screenshot_path):
+            continue
 
-    # Take a screenshot and save it
-    screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.png")
-    driver.save_screenshot(screenshot_path)
+        # Open the HTML file in Chrome
+        driver.get(f"file://{os.path.join(os.getcwd(), html_dir, html_file)}")
 
-    # Open the screenshot, rotate it, and save it again
-    img = Image.open(screenshot_path)
-    img_rotated = img.rotate(90, expand=True)
-    img_rotated.save(screenshot_path)
+        time.sleep(1)  # Give it a moment to load
 
-    print_progress_bar(i+1, len(html_files), prefix='Progress:', suffix='Complete', length=50)
+        # Take a screenshot and save it
+        driver.save_screenshot(screenshot_path)
 
-driver.quit()
+        # Open the screenshot, rotate it, and save it again
+        img = Image.open(screenshot_path)
+        img_rotated = img.rotate(90, expand=True)
+        img_rotated.save(screenshot_path)
+
+        print_progress_bar(i+1, len(html_files), prefix='Progress:', suffix='Complete', length=50)
+
+    driver.quit()
+
+
+
+screenshot_html_files(skip_existing=True)
