@@ -1,19 +1,20 @@
-MintedOn = {
-    'koda': 'koda',
-    'eth': 'eth',
-    'btc': 'btc'
-}
+
+from enum import Enum
+class MintedOn(Enum):
+    koda = 'koda'
+    eth = 'eth'
+    btc = 'btc'
 
 logo_map = {
-    MintedOn['koda']: {
+    MintedOn.koda: {
         'src': '../Koda._pink.svg',
         'width': '224px'
         },
-    MintedOn['eth']: {
+    MintedOn.eth: {
         'src': '../ethereum-eth.svg',
         'width': '120px'
     },
-    MintedOn['btc']: {
+    MintedOn.btc: {
         'src': '../bitcoin-btc-logo.svg',
         'width': '120px'
     }
