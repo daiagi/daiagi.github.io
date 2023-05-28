@@ -1615,5 +1615,84 @@ nft_data = {
             ]
         }
 
+    },
+    'Sasha Stiles': {
+        'Here/After The Art': {
+            'qr_folder': '../nft_submissions/After The Art',
+            'media_folder': '../nft_submissions/After The Art',
+            'minted_on': MintedOn.eth,
+            'nft_data': [
+                {
+                    'artwork_name': 'We are the Ancient Earthlings',
+                    'media': 'Sasha Stiles_We are the Ancient Earthlings.mp4',
+                    'description': 'Here/After The Art NFT project asks 100 artists from across the globe to look beyond their "normal" sphere of creativity and predict the future of art. Each creates a unique NFT composed of an artwork and an essay on the future of art in the form of a smart contract-controlled time capsule.',
+                    'qr_code': 'QR.png',
+                },
+            ]
+        }
+    },
+
+    'GlitchOfMind': {
+        'Here/After The Art': {
+            'qr_folder': '../nft_submissions/After The Art',
+            'media_folder': '../nft_submissions/After The Art',
+            'minted_on': MintedOn.eth,
+            'nft_data': [
+                {
+                    'artwork_name': 'The Envoy',
+                    'media': 'GlitchOfMind_The Envoy.png',
+                    'description': 'Here/After The Art NFT project asks 100 artists from across the globe to look beyond their "normal" sphere of creativity and predict the future of art. Each creates a unique NFT composed of an artwork and an essay on the future of art in the form of a smart contract-controlled time capsule.',
+                    'qr_code': 'QR.png',
+                },
+            ]
+        }
+    },
+
+    'Bay Backner': {
+        'Here/After The Art': {
+            'qr_folder': '../nft_submissions/After The Art',
+            'media_folder': '../nft_submissions/After The Art',
+            'minted_on': MintedOn.eth,
+            'nft_data': [
+                {
+                    'artwork_name': 'Temporal (the fish)',
+                    'media': 'Bay Backner_Temporal (the fish).mp4',
+                    'description': 'Here/After The Art NFT project asks 100 artists from across the globe to look beyond their "normal" sphere of creativity and predict the future of art. Each creates a unique NFT composed of an artwork and an essay on the future of art in the form of a smart contract-controlled time capsule.',
+                    'qr_code': 'QR.png',
+                },
+            ]
+        }
+    },
+
+    'Florencia S.M. Brück': {
+        'Here/After The Art': {
+            'qr_folder': '../nft_submissions/After The Art',
+            'media_folder': '../nft_submissions/After The Art',
+            'minted_on': MintedOn.eth,
+            'nft_data': [
+                {
+                    'artwork_name': 'The Symbiosis of Art and Technology: Unleashing Posthuman Creativity',
+                    'media': 'Florencia SM Bruck_The Symbiosis of Art and Technology-Unleashing Posthuman Creativity.mp4',
+                    'description': 'Here/After The Art NFT project asks 100 artists from across the globe to look beyond their "normal" sphere of creativity and predict the future of art. Each creates a unique NFT composed of an artwork and an essay on the future of art in the form of a smart contract-controlled time capsule.',
+                    'qr_code': 'QR.png',
+                },
+            ]
+        }
+    },
+
+    'Ivona Tau': {
+        'Here/After The Art': {
+            'qr_folder': '../nft_submissions/After The Art',
+            'media_folder': '../nft_submissions/After The Art',
+            'minted_on': MintedOn.eth,
+            'nft_data': [
+                {
+                    'artwork_name': 'Self portrait of digital soul',
+                    'media': 'Ivona Tau_Self portrait of digital soul.png',
+                    'description': 'Here/After The Art NFT project asks 100 artists from across the globe to look beyond their "normal" sphere of creativity and predict the future of art. Each creates a unique NFT composed of an artwork and an essay on the future of art in the form of a smart contract-controlled time capsule.',
+                    'qr_code': 'QR.png',
+                },
+            ]
+        }
     }
 }
