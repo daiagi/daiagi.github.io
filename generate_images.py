@@ -36,10 +36,11 @@ def screenshot_html_files(skip_existing):
 
     # Function to print/ update the progress bar
     def print_progress_bar(iteration, total, prefix='', suffix='', length=100, fill='█'):
-        percent = ("{0:.1f}").format(100 * (iteration / float(total)))
-        filled_length = int(length * iteration // total)
+        percent = 100 * (iteration / float(total))
+        filled_length = int(length * (percent / 100))
         bar = fill * filled_length + '-' * (length - filled_length)
-        print(f'\r{prefix} |{bar}| {percent}% {suffix}', end='\r')
+        percent_string = percent = ("{0:.1f}").format(percent)
+        print(f'\r{prefix} |{bar}| {percent_string}% {suffix}', end='\r')
         if iteration == total:
             print()
 
