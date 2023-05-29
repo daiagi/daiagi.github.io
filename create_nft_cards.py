@@ -5,7 +5,11 @@ import re
 from logo_map import logo_map
 
 
-def generate_html_files(data):
+def generate_html_files(data, clear_output_dir):
+
+    # Check if we need to delete the html_files directory before generating files
+    if clear_output_dir and os.path.exists('html_files'):
+        shutil.rmtree('html_files')
     # Create media directory if not exist
     os.makedirs('media', exist_ok=True)
     os.makedirs('html_files', exist_ok=True)
@@ -27,7 +31,8 @@ def generate_html_for_nft_data(artist, collection, data):
         # Copy media file to media directory and update the path
         old_media_path = os.path.join(data['media_folder'], nft['media'])
         new_media_name = nft['media'].replace('#', '_')  # modify filename here
-        new_media_path = os.path.join('media', artist, collection, new_media_name)
+        new_media_path = os.path.join(
+            'media', artist, collection, new_media_name)
         os.makedirs(os.path.dirname(new_media_path), exist_ok=True)
         shutil.copy(old_media_path, new_media_path)
         template_media_path = f"../{new_media_path}"
@@ -48,15 +53,16 @@ def generate_html_for_nft_data(artist, collection, data):
 
         html = html.replace('DESCRIPTION_CONTENT', nft.get('description', ''))
 
-
         # If the collection is empty, remove the entire line
-        collection = data.get('collection') or nft.get('collection') or collection
+        collection = data.get('collection') or nft.get(
+            'collection') or collection
 
         if collection != '':
             html = html.replace('COLLECTION_NAME', collection)
         else:
             # Remove the div starting from its id until its end
-            html = re.sub('<div id=\"collection-div\">[\s\S]*?</div>', '', html)
+            html = re.sub(
+                '<div id=\"collection-div\">[\s\S]*?</div>', '', html)
 
         html = html.replace('QR_CODE_PATH', template_qr_path)
 
@@ -83,14 +89,13 @@ def generate_html_for_nft_data(artist, collection, data):
         html_file_name = base_html_file_name  # modify filename here
         html_file_path = f'html_files/{html_file_name}.html'
 
-
         # Check if the file already exists, and append a number to the filename
         counter = 1
         while os.path.exists(html_file_path):
-            html_file_name = f'{base_html_file_name}_{counter}'  # modify filename here
+            # modify filename here
+            html_file_name = f'{base_html_file_name}_{counter}'
             html_file_path = f'html_files/{html_file_name}.html'
             counter += 1
-
 
         with open(f'html_files/{html_file_name}.html', 'w') as file:
             file.write(html)
@@ -102,4 +107,4 @@ with open(template_file, 'r') as file:
 
 # Import your custom module where the data structure is stored
 data = nft_data.nft_data
-generate_html_files(data)
+generate_html_files(data, True)
