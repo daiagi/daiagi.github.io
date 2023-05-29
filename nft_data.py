@@ -1,10 +1,12 @@
 from logo_map import MintedOn
 
+media_root_folder = '../nft_submissions'
+
 nft_data = {
     'Georgi Chertovskee': {
         'KODA CANARY': {
-            'qr_folder': '../nft_submissions/Chertovskee',
-            'media_folder': '../nft_submissions/Chertovskee/NFTs',
+            'qr_folder': f'{media_root_folder}/Chertovskee',
+            'media_folder': f'{media_root_folder}/Chertovskee/NFTs',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -121,8 +123,8 @@ nft_data = {
     },
 
     'Bastien': {
-        'qr_folder': '../nft_submissions/Bastien',
-        'media_folder': '../nft_submissions/Bastien/NFTs',
+        'qr_folder': f'{media_root_folder}/Bastien',
+        'media_folder': f'{media_root_folder}/Bastien/NFTs',
         'minted_on': MintedOn.eth,
         'nft_data': [
             {
@@ -156,8 +158,8 @@ nft_data = {
         ]
     },
     'Civort': {
-        'qr_folder': '../nft_submissions/Civort/QR CODES',
-        'media_folder': '../nft_submissions/Civort/NFTs',
+        'qr_folder': f'{media_root_folder}/Civort/QR CODES',
+        'media_folder': f'{media_root_folder}/Civort/NFTs',
         'minted_on': MintedOn.eth,
         'nft_data': [
             {
@@ -220,8 +222,8 @@ nft_data = {
     },
     'Krel Backstabba': {
         'Famous Cities and Legends': {
-            'qr_folder': '../nft_submissions/Krel Backstabba',
-            'media_folder': '../nft_submissions/Krel Backstabba/NFTs upscaled',
+            'qr_folder': f'{media_root_folder}/Krel Backstabba',
+            'media_folder': f'{media_root_folder}/Krel Backstabba/NFTs upscaled',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -305,8 +307,8 @@ nft_data = {
 
     'Sebicified': {
         'KODACHAINS': {
-            'qr_folder': '../nft_submissions/Sebicified/KODACHAINS Collection',
-            'media_folder': '../nft_submissions/Sebicified/KODACHAINS Collection/Kodachain Videos',
+            'qr_folder': f'{media_root_folder}/Sebicified/KODACHAINS Collection',
+            'media_folder': f'{media_root_folder}/Sebicified/KODACHAINS Collection/Kodachain Videos',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -462,8 +464,8 @@ nft_data = {
             ]
         },
         'KodaJoi': {
-            'qr_folder': '../nft_submissions/Sebicified/KodaJoi Collection',
-            'media_folder': '../nft_submissions/Sebicified/KodaJoi Collection',
+            'qr_folder': f'{media_root_folder}/Sebicified/KodaJoi Collection',
+            'media_folder': f'{media_root_folder}/Sebicified/KodaJoi Collection',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -475,8 +477,8 @@ nft_data = {
             ]
         },
         'KOSMOS': {
-            'qr_folder': '../nft_submissions/Sebicified/KOSMOS Collection',
-            'media_folder': '../nft_submissions/Sebicified/KOSMOS Collection',
+            'qr_folder': f'{media_root_folder}/Sebicified/KOSMOS Collection',
+            'media_folder': f'{media_root_folder}/Sebicified/KOSMOS Collection',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -506,8 +508,8 @@ nft_data = {
             ]
         },
         'Underdogz of Koda': {
-            'qr_folder': '../nft_submissions/Sebicified/Underdogz of Koda',
-            'media_folder': '../nft_submissions/Sebicified/Underdogz of Koda',
+            'qr_folder': f'{media_root_folder}/Sebicified/Underdogz of Koda',
+            'media_folder': f'{media_root_folder}/Sebicified/Underdogz of Koda',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -540,8 +542,8 @@ nft_data = {
 
     'SFY Labs': {
         'The Great Architect': {
-            'qr_folder': '../nft_submissions/SFY Labs/QR Code',
-            'media_folder': '../nft_submissions/SFY Labs/NFT media',
+            'qr_folder': f'{media_root_folder}/SFY Labs/QR Code',
+            'media_folder': f'{media_root_folder}/SFY Labs/NFT media',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -553,8 +555,8 @@ nft_data = {
             ]
         },
         'Donkey Gang': {
-            'qr_folder': '../nft_submissions/SFY Labs/QR Code',
-            'media_folder': '../nft_submissions/SFY Labs/NFT media',
+            'qr_folder': f'{media_root_folder}/SFY Labs/QR Code',
+            'media_folder': f'{media_root_folder}/SFY Labs/NFT media',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -566,8 +568,8 @@ nft_data = {
             ]
         },
         'Thor, son of Odin': {
-            'qr_folder': '../nft_submissions/SFY Labs/QR Code',
-            'media_folder': '../nft_submissions/SFY Labs/NFT media',
+            'qr_folder': f'{media_root_folder}/SFY Labs/QR Code',
+            'media_folder': f'{media_root_folder}/SFY Labs/NFT media',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -579,8 +581,8 @@ nft_data = {
             ]
         },
         'HASC: Hip Aliens Secret Club': {
-            'qr_folder': '../nft_submissions/SFY Labs/QR Code',
-            'media_folder': '../nft_submissions/SFY Labs/NFT media',
+            'qr_folder': f'{media_root_folder}/SFY Labs/QR Code',
+            'media_folder': f'{media_root_folder}/SFY Labs/NFT media',
             'minted_on': MintedOn.btc,
             'nft_data': [
                 {
@@ -596,8 +598,8 @@ nft_data = {
 
     'David Proto': {
         'STARGAZER': {
-            'qr_folder': '../nft_submissions/✦ STARGAZER ✦/QR STARGAZER',
-            'media_folder': '../nft_submissions/✦ STARGAZER ✦/STARGAZER NFT PRAGA',
+            'qr_folder': f'{media_root_folder}/✦ STARGAZER ✦/QR STARGAZER',
+            'media_folder': f'{media_root_folder}/✦ STARGAZER ✦/STARGAZER NFT PRAGA',
             'minted_on': MintedOn.koda,
             'collection': 'STARGAZER',
             'nft_data': [
@@ -711,8 +713,8 @@ nft_data = {
     },
     'Zluchkayaaa': {
         'Ku*': {
-            'qr_folder': '../nft_submissions/Zluchkayaaa',
-            'media_folder': '../nft_submissions/Zluchkayaaa/NFT',
+            'qr_folder': f'{media_root_folder}/Zluchkayaaa',
+            'media_folder': f'{media_root_folder}/Zluchkayaaa/NFT',
             'minted_on': MintedOn.koda,
             'collection': 'Ku*',
             'nft_data': [
@@ -761,8 +763,8 @@ nft_data = {
 
     'ANIME LEGACY': {
         'BASIME': {
-            'qr_folder': '../nft_submissions/A Anime Legacy on KodaDot',
-            'media_folder': '../nft_submissions/A Anime Legacy on KodaDot',
+            'qr_folder': f'{media_root_folder}/A Anime Legacy on KodaDot',
+            'media_folder': f'{media_root_folder}/A Anime Legacy on KodaDot',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -785,8 +787,8 @@ nft_data = {
     },
     'Elly': {
         'BEDSIDE MONSTERS': {
-            'qr_folder': '../nft_submissions/A Bedside Monsters on KodaDot/QR',
-            'media_folder': '../nft_submissions/A Bedside Monsters on KodaDot/NFT video',
+            'qr_folder': f'{media_root_folder}/A Bedside Monsters on KodaDot/QR',
+            'media_folder': f'{media_root_folder}/A Bedside Monsters on KodaDot/NFT video',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -831,8 +833,8 @@ nft_data = {
 
     },
     'Luigi Lucarelli': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -845,8 +847,8 @@ nft_data = {
     },
     'Satori': {
         'Chao Sama': {
-            'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-            'media_folder': '../nft_submissions/A CNA on Moonbeans',
+            'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+            'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -860,8 +862,8 @@ nft_data = {
 
     },
     'Ellene Tsukiko': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -874,8 +876,8 @@ nft_data = {
     },
 
     'Marlua': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -887,8 +889,8 @@ nft_data = {
         ],
     },
     'Dice': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -899,8 +901,8 @@ nft_data = {
         ],
     },
     'Tako/Shibatales': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -912,8 +914,8 @@ nft_data = {
         ],
     },
     'Ramz': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -925,8 +927,8 @@ nft_data = {
         ],
     },
     'Kiltmaster': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -938,8 +940,8 @@ nft_data = {
         ],
     },
     'Rachel': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -952,8 +954,8 @@ nft_data = {
     },
 
     'Secret Agent': {
-        'qr_folder': '../nft_submissions/A CNA on Moonbeans',
-        'media_folder': '../nft_submissions/A CNA on Moonbeans',
+        'qr_folder': f'{media_root_folder}/A CNA on Moonbeans',
+        'media_folder': f'{media_root_folder}/A CNA on Moonbeans',
         'minted_on': MintedOn.koda,
         'nft_data': [
             {
@@ -1046,8 +1048,8 @@ nft_data = {
 
     'CWH - ClownWorldHouse': {
         'Rarest Spaceships': {
-            'qr_folder': '../nft_submissions/A CWH on kodaDot/A Rarest Spaceships on kodaDot',
-            'media_folder': '../nft_submissions/A CWH on kodaDot/A Rarest Spaceships on kodaDot/images',
+            'qr_folder': f'{media_root_folder}/A CWH on kodaDot/A Rarest Spaceships on kodaDot',
+            'media_folder': f'{media_root_folder}/A CWH on kodaDot/A Rarest Spaceships on kodaDot/images',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1075,8 +1077,8 @@ nft_data = {
 
     'Itslilliy': {
         'The Enchanted Forest': {
-            'qr_folder': '../nft_submissions/A Elements of KSM on kodaDot/QR',
-            'media_folder': '../nft_submissions/A Elements of KSM on kodaDot/NFT',
+            'qr_folder': f'{media_root_folder}/A Elements of KSM on kodaDot/QR',
+            'media_folder': f'{media_root_folder}/A Elements of KSM on kodaDot/NFT',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1088,8 +1090,8 @@ nft_data = {
             ],
         },
         'Snek-Frens': {
-            'qr_folder': '../nft_submissions/A @Itslilliy on kodaDot/QR',
-            'media_folder': '../nft_submissions/A @Itslilliy on kodaDot/NFTs',
+            'qr_folder': f'{media_root_folder}/A @Itslilliy on kodaDot/QR',
+            'media_folder': f'{media_root_folder}/A @Itslilliy on kodaDot/NFTs',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1242,8 +1244,8 @@ nft_data = {
             ]
         },
         'KoDragons': {
-            'qr_folder': '../nft_submissions/A Kusama Dragons on KodaDot/KoDragons',
-            'media_folder': '../nft_submissions/A Kusama Dragons on KodaDot/KoDragons',
+            'qr_folder': f'{media_root_folder}/A Kusama Dragons on KodaDot/KoDragons',
+            'media_folder': f'{media_root_folder}/A Kusama Dragons on KodaDot/KoDragons',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1308,8 +1310,8 @@ nft_data = {
     },
     'HookerNFT': {
         'Hooker\'s Urban': {
-            'qr_folder': '../nft_submissions/A HookerNFT on kodadot',
-            'media_folder': '../nft_submissions/A HookerNFT on kodadot/2160x2160',
+            'qr_folder': f'{media_root_folder}/A HookerNFT on kodadot',
+            'media_folder': f'{media_root_folder}/A HookerNFT on kodadot/2160x2160',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1420,8 +1422,8 @@ nft_data = {
 
     'mad4ox': {
         'Project: KODA PHANTOM': {
-            'qr_folder': '../nft_submissions/A mad4oxart on kodadot/Project_KODA PHANTOM collection',
-            'media_folder': '../nft_submissions/A mad4oxart on kodadot/Project_KODA PHANTOM collection',
+            'qr_folder': f'{media_root_folder}/A mad4oxart on kodadot/Project_KODA PHANTOM collection',
+            'media_folder': f'{media_root_folder}/A mad4oxart on kodadot/Project_KODA PHANTOM collection',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1435,8 +1437,8 @@ nft_data = {
     },
     'RainbowNFT': {
         'NAGA KADAL': {
-            'qr_folder': '../nft_submissions/A RainbowNFT_READY on kodaDot',
-            'media_folder': '../nft_submissions/A RainbowNFT_READY on kodaDot',
+            'qr_folder': f'{media_root_folder}/A RainbowNFT_READY on kodaDot',
+            'media_folder': f'{media_root_folder}/A RainbowNFT_READY on kodaDot',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1468,8 +1470,8 @@ nft_data = {
     },
     'RMRK Punks': {
         'RMRK Punks': {
-            'qr_folder': '../nft_submissions/A RMRK Punks on KodaDot/Description and QR',
-            'media_folder': '../nft_submissions/A RMRK Punks on KodaDot',
+            'qr_folder': f'{media_root_folder}/A RMRK Punks on KodaDot/Description and QR',
+            'media_folder': f'{media_root_folder}/A RMRK Punks on KodaDot',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1569,8 +1571,8 @@ nft_data = {
     },
     'Ruben Topia': {
         'SELF': {
-            'qr_folder': '../nft_submissions/A Ruben Topia on kodaDot',
-            'media_folder': '../nft_submissions/A Ruben Topia on kodaDot',
+            'qr_folder': f'{media_root_folder}/A Ruben Topia on kodaDot',
+            'media_folder': f'{media_root_folder}/A Ruben Topia on kodaDot',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1602,8 +1604,8 @@ nft_data = {
     },
     'Yaki': {
         'Shiba Tales Unlimited': {
-            'qr_folder': '../nft_submissions/A shibatales on kodadot',
-            'media_folder': '../nft_submissions/A shibatales on kodadot',
+            'qr_folder': f'{media_root_folder}/A shibatales on kodadot',
+            'media_folder': f'{media_root_folder}/A shibatales on kodadot',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
@@ -1618,8 +1620,8 @@ nft_data = {
     },
     'Sasha Stiles': {
         'Here/After The Art': {
-            'qr_folder': '../nft_submissions/After The Art',
-            'media_folder': '../nft_submissions/After The Art',
+            'qr_folder': f'{media_root_folder}/After The Art',
+            'media_folder': f'{media_root_folder}/After The Art',
             'minted_on': MintedOn.eth,
             'nft_data': [
                 {
@@ -1634,8 +1636,8 @@ nft_data = {
 
     'GlitchOfMind': {
         'Here/After The Art': {
-            'qr_folder': '../nft_submissions/After The Art',
-            'media_folder': '../nft_submissions/After The Art',
+            'qr_folder': f'{media_root_folder}/After The Art',
+            'media_folder': f'{media_root_folder}/After The Art',
             'minted_on': MintedOn.eth,
             'nft_data': [
                 {
@@ -1650,8 +1652,8 @@ nft_data = {
 
     'Bay Backner': {
         'Here/After The Art': {
-            'qr_folder': '../nft_submissions/After The Art',
-            'media_folder': '../nft_submissions/After The Art',
+            'qr_folder': f'{media_root_folder}/After The Art',
+            'media_folder': f'{media_root_folder}/After The Art',
             'minted_on': MintedOn.eth,
             'nft_data': [
                 {
@@ -1666,8 +1668,8 @@ nft_data = {
 
     'Florencia S.M. Brück': {
         'Here/After The Art': {
-            'qr_folder': '../nft_submissions/After The Art',
-            'media_folder': '../nft_submissions/After The Art',
+            'qr_folder': f'{media_root_folder}/After The Art',
+            'media_folder': f'{media_root_folder}/After The Art',
             'minted_on': MintedOn.eth,
             'nft_data': [
                 {
@@ -1682,8 +1684,8 @@ nft_data = {
 
     'Ivona Tau': {
         'Here/After The Art': {
-            'qr_folder': '../nft_submissions/After The Art',
-            'media_folder': '../nft_submissions/After The Art',
+            'qr_folder': f'{media_root_folder}/After The Art',
+            'media_folder': f'{media_root_folder}/After The Art',
             'minted_on': MintedOn.eth,
             'nft_data': [
                 {
@@ -1697,8 +1699,8 @@ nft_data = {
     },
     'Jesse Metclafe': {
         'Pixel of the Apes': {
-            'qr_folder': '../nft_submissions/Resistance',
-            'media_folder': '../nft_submissions/Resistance',
+            'qr_folder': f'{media_root_folder}/Resistance',
+            'media_folder': f'{media_root_folder}/Resistance',
             'minted_on': MintedOn.eth,
             'nft_data': [
                 {
@@ -1712,8 +1714,8 @@ nft_data = {
     },
     'Guilherme Manera (Myr) - GraviDAO': {
         'TokuNFT': {
-            'qr_folder': '../nft_submissions/TOKUNFT',
-            'media_folder': '../nft_submissions/TOKUNFT/NFTs',
+            'qr_folder': f'{media_root_folder}/TOKUNFT',
+            'media_folder': f'{media_root_folder}/TOKUNFT/NFTs',
             'minted_on': MintedOn.koda,
             'nft_data': [
                 {
