@@ -74,8 +74,8 @@ def generate_html_for_nft_data(artist, collection, data):
         # Determine the media type based on the file extension
         media_ext = os.path.splitext(nft['media'])[1]
         media_id = "media-content"
-        if media_ext in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF']:
-            media_tag = f'<img id="{media_id}" src="{template_media_path}" alt="{nft["artwork_name"]}" style="width:100%; object-fit: contain;" />'
+        if media_ext in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF', '.webp']:
+            media_tag = f'<img id="{media_id}" src="{template_media_path}" alt="{nft["artwork_name"]}" style="width:100%; max-height: 1080px; object-fit: contain;" />'
         elif media_ext in ['.mp4', '.webm', '.ogg']:
             media_tag = f'<video id="{media_id}" controls autoplay muted loop style="width:100%; object-fit: contain;"><source src="{template_media_path}" type="video/{media_ext[1:]}">Your browser does not support the video tag.</video>'
         elif media_ext in ['.mp3', '.wav', '.flac']:
