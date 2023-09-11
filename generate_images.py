@@ -9,7 +9,7 @@ import os
 import time
 from PIL import Image
 
-def screenshot_html_files(skip_existing):
+def screenshot_html_files(skip_existing, jpeg_quality=95):
     # Setup Chrome options
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Ensure GUI is off
@@ -47,7 +47,7 @@ def screenshot_html_files(skip_existing):
     # Iterate over all HTML files
     for i, html_file in enumerate(html_files):
 
-        screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.png")
+        screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.jpg")
 
         # Check if screenshot exists and skip if necessary
         if skip_existing and os.path.exists(screenshot_path):
@@ -64,7 +64,10 @@ def screenshot_html_files(skip_existing):
         # Open the screenshot, rotate it, and save it again
         img = Image.open(screenshot_path)
         img_rotated = img.rotate(90, expand=True)
-        img_rotated.save(screenshot_path)
+        # Convert RGBA to RGB
+        if img_rotated.mode == 'RGBA':
+            img_rotated = img_rotated.convert("RGB")
+        img_rotated.save(screenshot_path, "JPEG", quality=jpeg_quality)
 
         print_progress_bar(i+1, len(html_files), prefix='Progress:', suffix='Complete', length=50)
 
