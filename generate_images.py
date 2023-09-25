@@ -9,6 +9,7 @@ import os
 import time
 from PIL import Image
 
+
 def screenshot_html_files(skip_existing, jpeg_quality=95):
     # Setup Chrome options
     chrome_options = Options()
@@ -23,7 +24,8 @@ def screenshot_html_files(skip_existing, jpeg_quality=95):
 
     # Set up the webdriver
     webdriver_service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+    driver = webdriver.Chrome(
+        service=webdriver_service, options=chrome_options)
 
     # The directory where the HTML files are stored
     html_dir = "html_files"
@@ -32,7 +34,9 @@ def screenshot_html_files(skip_existing, jpeg_quality=95):
     screenshot_dir = "screenshots"
     os.makedirs(screenshot_dir, exist_ok=True)
 
-    html_files = [file for file in os.listdir(html_dir) if file.endswith(".html")]
+    # Get all HTML files recursively, and their relative paths
+    html_files = [os.path.join(dp, f) for dp, dn, filenames in os.walk(
+        html_dir) for f in filenames if f.endswith(".html")]
 
     # Function to print/ update the progress bar
     def print_progress_bar(iteration, total, prefix='', suffix='', length=100, fill='█'):
@@ -45,16 +49,25 @@ def screenshot_html_files(skip_existing, jpeg_quality=95):
             print()
 
     # Iterate over all HTML files
-    for i, html_file in enumerate(html_files):
+    for i, relative_html_path in enumerate(html_files):
 
-        screenshot_path = os.path.join(screenshot_dir, f"{os.path.splitext(html_file)[0]}.jpg")
+        # Remove the 'html_files/' prefix from the relative path
+        relative_screenshot_path = relative_html_path[len(html_dir) + 1:]
 
+        # Construct the path where the screenshot will be saved
+        base_screenshot_path = os.path.splitext(
+            relative_screenshot_path)[0] + ".png"
+        screenshot_path = os.path.join(screenshot_dir, base_screenshot_path)
+
+        # Make sure the directory exists
+        os.makedirs(os.path.dirname(screenshot_path), exist_ok=True)
+        
         # Check if screenshot exists and skip if necessary
         if skip_existing and os.path.exists(screenshot_path):
             continue
 
         # Open the HTML file in Chrome
-        driver.get(f"file://{os.path.join(os.getcwd(), html_dir, html_file)}")
+        driver.get(f"file://{os.path.join(os.getcwd(), relative_html_path)}")
 
         time.sleep(1)  # Give it a moment to load
 
@@ -64,15 +77,15 @@ def screenshot_html_files(skip_existing, jpeg_quality=95):
         # Open the screenshot, rotate it, and save it again
         img = Image.open(screenshot_path)
         img_rotated = img.rotate(90, expand=True)
-        # Convert RGBA to RGB
-        if img_rotated.mode == 'RGBA':
-            img_rotated = img_rotated.convert("RGB")
-        img_rotated.save(screenshot_path, "JPEG", quality=jpeg_quality)
+        # # Convert RGBA to RGB
+        # if img_rotated.mode == 'RGBA':
+        #     img_rotated = img_rotated.convert("RGB")
+        img_rotated.save(screenshot_path, "png")
 
-        print_progress_bar(i+1, len(html_files), prefix='Progress:', suffix='Complete', length=50)
+        print_progress_bar(i+1, len(html_files),
+                           prefix='Progress:', suffix='Complete', length=50)
 
     driver.quit()
-
 
 
 screenshot_html_files(skip_existing=True)

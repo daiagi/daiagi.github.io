@@ -35,7 +35,7 @@ def generate_html_for_nft_data(artist, collection, data):
             'media', artist, collection, new_media_name)
         os.makedirs(os.path.dirname(new_media_path), exist_ok=True)
         shutil.copy(old_media_path, new_media_path)
-        template_media_path = f"../{new_media_path}"
+        template_media_path = f"../../{new_media_path}"
 
         # Copy QR code to media directory and update the path
         old_qr_path = os.path.join(data['qr_folder'], nft['qr_code'])
@@ -43,7 +43,7 @@ def generate_html_for_nft_data(artist, collection, data):
         new_qr_path = os.path.join('media', artist, collection, new_qr_name)
         os.makedirs(os.path.dirname(new_qr_path), exist_ok=True)
         shutil.copy(old_qr_path, new_qr_path)
-        template_qr_path = f"../{new_qr_path}"
+        template_qr_path = f"../../{new_qr_path}"
 
         # Replace the placeholders in the template with the actual data
         html = html.replace('ARTWORK_NAME', nft['artwork_name'])
@@ -86,18 +86,21 @@ def generate_html_for_nft_data(artist, collection, data):
 
         # Write the populated HTML to a new file
         base_html_file_name = nft["artwork_name"].replace("#", "_")
-        html_file_name = base_html_file_name  # modify filename here
-        html_file_path = f'html_files/{html_file_name}.html'
+        html_file_name = base_html_file_name 
+        html_file_path = os.path.join('html_files', artist, f"{html_file_name}.html")
 
         # Check if the file already exists, and append a number to the filename
         counter = 1
         while os.path.exists(html_file_path):
             # modify filename here
             html_file_name = f'{base_html_file_name}_{counter}'
-            html_file_path = f'html_files/{html_file_name}.html'
+            html_file_path = os.path.join('html_files', artist, f"{html_file_name}.html")
+
             counter += 1
 
-        with open(f'html_files/{html_file_name}.html', 'w') as file:
+        os.makedirs(os.path.join('html_files', artist), exist_ok=True)
+
+        with open(html_file_path, 'w') as file:
             file.write(html)
 
 
