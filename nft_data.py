@@ -1,6 +1,7 @@
 from logo_map import MintedOn
 
 media_root_folder = '../nft_exhibition_submissions'
+ScenicCanyonDriveDescription = "Experience the scenic canyon drive claims the title through the attribution of the art piece, that makes the viewer feel the steepness from shifting focal points in each consecutive art piece rendered. The contouring gradients emphasize the down cutting effects of nature creating the mind blowing visual formation of a canyon. The shifting focal points in each unique piece will create an irresistible urge of driving through the canyons. You may feel the depths in center focused over head shots. The more concentric waves, the more you are lost in the deepest realm. Lesser the defined gradients the closer you are to the canyon view. The color sense of the artist will make one feel amidst the variety of canyon wildflowers. One can also have a misty day view with unleashing cloudy white lace weaving through the art in certain pieces. The piece of art will also make the viewer enjoy the rotation of sun with brilliant red and orange shades for clearing out morning sky white shadowing dark tones will doze off to the dusky mode."
 
 
 nft_data = {
@@ -136,150 +137,72 @@ nft_data = {
             {
                 'artwork_name': 'Le rugissant',
                 'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant©AlexandreSchuck.jpg',
+                'media': 'le rugissant.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Les dents du lac',
                 'description': '"Les dents du lac", a derivative of "les dents de la mer" which is the french title for the movie "jaws" and which means "the teeth of the sea", in this case "the teeth of the lake", are two feet-alligators jumping out of water in order to catch those phallic-shaped fishes.',
-                'media': 'les dents du lac©AlexandreSchuck.jpg',
+                'media': 'les dents du lac.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'L´ultime prédateur',
                 'description': '"the ultimate predator" in english. An interpretation based statement on who is the real predator between the male represented snake or the female represented mantis.',
-                'media': 'l´ultime prédateur©AlexandreSchuck.jpg',
+                'media': 'l´ultime prédateur.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Float and sting',
                 'description': 'the title of this artwork is based on the famous quote of Mohammed Ali. Indeed, in this painting there is the stinging hornet and the floating butterfly, creating together the beautiful shape of a female body.',
-                'media': 'float and sting©AlexandreSchuck.jpg',
+                'media': 'float and sting.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'La vue perçante',
                 'description': '"la vue perçante" means "the piercing sight", of this royal eagle, able to see everything, with its butterfly mask and its female legs eyebrows.',
-                'media': 'la vue perçante©AlexandreSchuck.jpg',
+                'media': 'la vue percante.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'À ses pieds',
                 'description': '„à ses pieds“ means „at her feet“. The snake, ready to bite or smoking a joint? Is he enjoy beeing between her feet or does he feel trapped? You might have not seen the ambiguity of the mussel as well.',
-                'media': 'à ses pieds©AlexandreSchuck.jpg',
+                'media': 'à ses pieds.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Le rugissant - screenprint #1',
-                'media': 'le rugissant - screenprint#1©AlexandreSchuck.jpg',
+                'media': 'le rugissant - screenprint#1.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Le rugissant - screenprint #2',
-                'media': 'le rugissant - screenprint#2©AlexandreSchuck.jpg',
+                'media': 'le rugissant - screenprint#2.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Le rugissant - screenprint #3',
-                'media': 'le rugissant - screenprint#3©AlexandreSchuck.jpg',
+                'media': 'le rugissant - screenprint#3.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Le rugissant - screenprint #4',
-                'media': 'le rugissant - screenprint#4©AlexandreSchuck.jpg',
+                'media': 'le rugissant - screenprint#4.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Le rugissant - screenprint square',
-                'media': 'le rugissant - screenprint#square©AlexandreSchuck.jpg',
+                'media': 'le rugissant - screenprint_square.jpg',
                 'qr_code': 'download (18).png'
             },
             {
                 'artwork_name': 'Les dents du lac - screenprint',
-                'media': 'les dents du lac - screenprint©AlexandreSchuck.jpg',
+                'media': 'les dents du lac - screenprint.jpg',
                 'qr_code': 'download (18).png'
             }
         ]
     },
-    'Alex Schuck': {
-        'qr_folder': f'{media_root_folder}/Alex Schuck/QR',
-        'media_folder': f'{media_root_folder}/Alex Schuck/NFTs',
-        'minted_on': MintedOn.koda,  # Assuming the same minted platform; adjust as necessary
-        'nft_data': [
-            {
-                'artwork_name': 'Le rugissant',
-                'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Les dents du lac',
-                'description': '"Les dents du lac", a derivative of "les dents de la mer" which is the french title for the movie "jaws" and which means "the teeth of the sea", in this case "the teeth of the lake", are two feet-alligators jumping out of water in order to catch those phallic-shaped fishes.',
-                'media': 'les dents du lac©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'L´ultime prédateur',
-                'description': '"the ultimate predator" in english. An interpretation based statement on who is the real predator between the male represented snake or the female represented mantis.',
-                'media': 'l´ultime prédateur©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Float and sting',
-                'description': 'the title of this artwork is based on the famous quote of Mohammed Ali. Indeed, in this painting there is the stinging hornet and the floating butterfly, creating together the beautiful shape of a female body.',
-                'media': 'float and sting©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'La vue perçante',
-                'description': '"la vue perçante" means "the piercing sight", of this royal eagle, able to see everything, with its butterfly mask and its female legs eyebrows.',
-                'media': 'la vue perçante©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'À ses pieds',
-                'description': '„à ses pieds“ means „at her feet“. The snake, ready to bite or smoking a joint? Is he enjoy beeing between her feet or does he feel trapped? You might have not seen the ambiguity of the mussel as well.',
-                'media': 'à ses pieds©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Le rugissant - screenprint #1',
-                'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant - screenprint#1©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Le rugissant - screenprint #2',
-                'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant - screenprint#2©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Le rugissant - screenprint #3',
-                'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant - screenprint#3©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Le rugissant - screenprint #4',
-                'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant - screenprint#4©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Le rugissant - screenprint square',
-                'description': '"Le rugissant", in english "the roaring" is a tiger whose jaw is beeing spiked by a high heel, roaring his pain and his rage. The high heel is also the hidden trunk of an elephant, whose ears you will discover and whose trunk retakes its initial shape. Along this puzzle of shapes and colours with an erotic touch, you will also meet a peacock butterfly, whose colours remind those of the tiger.',
-                'media': 'le rugissant - screenprint#square©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            },
-            {
-                'artwork_name': 'Les dents du lac - screenprint',
-                'description': '"Les dents du lac", a derivative of "les dents de la mer" which is the french title for the movie "jaws" and which means "the teeth of the sea", in this case "the teeth of the lake", are two feet-alligators jumping out of water in order to catch those phallic-shaped fishes.',
-                'media': 'les dents du lac - screenprint©AlexandreSchuck.jpg',
-                'qr_code': 'download (18).png'
-            }
-        ]
-    },
+
     'Anjoladave': {
         'qr_folder': f'{media_root_folder}/Anjoladave/QR',
         'media_folder': f'{media_root_folder}/Anjoladave/NFT',
@@ -578,7 +501,7 @@ nft_data = {
             "nft_data": [
                 {
                     "artwork_name": "Cätsøn meditation centre",
-                    "media": "Cätsøn meditation centre.png",
+                    "media": "Catson meditation centre.png",
                     "description": "Five cats serene, in Nordic scene, On furniture of sleek design, Meditate with eyes closed tight, Whiskers twitching, minds align.",
                     "qr_code": "download (21).png"
                 },
@@ -1076,7 +999,7 @@ nft_data = {
                 "qr_code": "download (16).png"
             },
             {
-                "artwork_name": "A sunset on the river . It's a classic... or it isn't?",
+                "artwork_name": "A sunset on the river It's a classic or it isn't",
                 "media": "#10.jpg",
                 "qr_code": "download (16).png"
             },
@@ -2860,7 +2783,515 @@ nft_data = {
                 "qr_code": "download (25).png"
             }
         ]
+    },
+    "Sabha B": {
+        "Experience The scenic canyon drive": {
+            "qr_folder": f"{media_root_folder}/thatgenartist/QR",
+            "media_folder": f"{media_root_folder}/thatgenartist/NFTs - BERLIN",
+            "minted_on": MintedOn.koda,
+            "nft_data": [
+                {
+                    "artwork_name": "nft-canyon-1",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-1.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-2",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-2.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-3",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-3.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-4",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-4.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-5",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-5.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-6",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-6.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-7",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-7.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-8",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-8.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-9",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-9.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-10",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-10.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-11",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-11.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-12",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-12.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-13",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-13.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-14",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-14.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-15",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-15.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-16",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-16.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-17",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-17.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-18",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-18.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-19",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-19.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-20",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-20.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-21",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-21.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-22",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-22.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-23",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-23.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-24",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-24.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-25",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-25.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-26",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-26.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-27",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-27.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-28",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-28.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-29",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-29.png",
+                    "qr_code": "download (26).png"
+                },
+                {
+                    "artwork_name": "nft-canyon-30",
+                    "description": ScenicCanyonDriveDescription,
+                    "media": "nft-canyon-30.png",
+                    "qr_code": "download (26).png"
+                }
+            ]
+
+        }
+
+    },
+    "Tatiana Mishchenko": {
+        "qr_folder": f"{media_root_folder}/tanimishchenko/QR",
+        "media_folder": f"{media_root_folder}/tanimishchenko/NFTs",
+        "minted_on": MintedOn.koda,
+        "nft_data": [
+            {
+                "artwork_name": "Januery Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "January girl.jpg",
+                "qr_code": "download (17).png"
+            },
+            {
+                "artwork_name": "February Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "February girl.jpg",
+                "qr_code": "download (17).png"
+            },
+            {
+                "artwork_name": "March Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "March girl.jpg",
+                "qr_code": "download (17).png"
+            },
+            {
+                "artwork_name": "April Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "April girl.jpg",
+                "qr_code": "download (17).png"
+            },
+            {
+                "artwork_name": "May Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "Girl May.jpg",
+                "qr_code": "download (17).png"
+            },
+            {
+                "artwork_name": "June Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "Girl June.jpg",
+                "qr_code": "download (17).png"
+            },
+            {
+                "artwork_name": "July Girl",
+                "description": "I present to you my works, Seasons. A girl, like a constantly changing creature, like a reborn flower, like seething snow, like a burning sun, is changeable and fickle, but always beautiful in any mood... 7 months are represented, the mood and emotions of each month. the rest of the months soon...",
+                "media": "Girl July.jpg",
+                "qr_code": "download (17).png"
+            }
+
+        ]
+    },
+    "Zeon Inyang": {
+        "qr_folder": f"{media_root_folder}/Zeon/QR",
+        "media_folder": f"{media_root_folder}/Zeon/NFTs",
+        "minted_on": MintedOn.koda,
+        "nft_data": [
+            {
+                "artwork_name": "Mr. Penguin",
+                "description": "Mr Penguin is a pen drawing in Afrocentric Mandala style showing the strength and beauty of a penguin.",
+                "media": "Mr_Penguin_.jpg",
+                "qr_code": "download (24).png"
+            },
+            {
+                "artwork_name": "Feelings on the ocean",
+                "description": "Feelings on the Ocean is a pen drawing depicting the calmness of the ocean at dawn, reflecting the peace of a dream catcher.",
+                "media": "Feelings_On_The_Ocean_.jpg",
+                "qr_code": "download (24).png"
+            },
+            {
+                "artwork_name": "Will time tell?",
+                "description": "Will time tell? Is a pen drawing that ponders on the unwavering uncertainty of the future.",
+                "media": "Will_Time_Tell.jpg",
+                "qr_code": "download (24).png"
+            }
+
+
+        ]
+    },
+    "YEDAI": {
+        "Human Layers": {
+            "qr_folder": f"{media_root_folder}/YEDAI/QR",
+            "media_folder": f"{media_root_folder}/YEDAI/NFTs",
+            "minted_on": MintedOn.koda,
+            "nft_data": [
+                {
+                    "artwork_name": "The Bystander",
+                    "description": "The Bystander | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "The Bystander.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "Borderline",
+                    "description": "Borderline | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "Borderline.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "No Returns",
+                    "description": "No Returns | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "No Returns.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "Responsible",
+                    "description": "Responsible | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "Responsible.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "Fly",
+                    "description": "Fly | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "Fly.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "Poised",
+                    "description": "Poised | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "Poised.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "Cleansed",
+                    "description": "Cleansed | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "Cleansed.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "White Collar",
+                    "description": "White Collar | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "White Collar.jpeg",
+                    "qr_code": "download (20).png"
+                },
+                {
+                    "artwork_name": "Void",
+                    "description": "Void | Human Layers\n\nAI Collaboration by YEDAI 2023\n\n4000 x 4000 px\n300 dpi",
+                    "media": "Void.jpeg",
+                    "qr_code": "download (20).png"
+                }
+            ]
+        }
+
+
+    },
+    "vibe_tez": {
+        "qr_folder": f"{media_root_folder}/vibe_tez/QR",
+        "media_folder": f"{media_root_folder}/vibe_tez/NFT",
+        "minted_on": MintedOn.koda,
+
+        "nft_data": [
+                {
+                    "artwork_name": "Tokyo Workers",
+                    "description": "In a deserted big city, shoe shiners are left completely unemployed.",
+                    "media": "Tokyo Workers.png",
+                    "qr_code": "QR CODE Uncharted Strangers.png"
+                },
+            {
+                    "artwork_name": "Queen of Garbage",
+                    "description": "Garbage may is different.",
+                    "media": "Queen of Garbage.png",
+                    "qr_code": "QR CODE Uncharted Strangers.png"
+                    },
+            {
+                    "artwork_name": "Alone",
+                    "description": "After so many years of married life, I was left completely alone.",
+                    "media": "Alone.png",
+                    "qr_code": "QR CODE Uncharted Strangers.png"
+                    }
+        ]
+
+    },
+    "Theo Goodman": {
+        "qr_folder": f"{media_root_folder}/Theo Goodman/QR",
+        "media_folder": f"{media_root_folder}/Theo Goodman/NFTs",
+        "minted_on": MintedOn.koda,
+
+        "nft_data": [
+            {
+                "artwork_name": "zur Zeit gestört",
+                "description": "A relic of a past time holding on for life. Photograph, Hamburg 2023",
+                "media": "zur Zeit gestort.jpg",
+                "qr_code": "download (20).png"
+            },
+            {
+                "artwork_name": "NO",
+                "description": "Just don´t do it. Photograph, Vicenza 2023",
+                "media": "no.jpg",
+                "qr_code": "download (20).png"
+            }
+        ]
+    },
+    "Tania Jura": {
+        "qr_folder": f"{media_root_folder}/Tanja/QR",
+        "media_folder": f"{media_root_folder}/Tanja/NFTs",
+        "minted_on": MintedOn.koda,
+
+        "nft_data": [
+            {
+                "artwork_name": "Epic",
+                "description": "by Tania Jura, 2023.",
+                "media": "Epic.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Phantom",
+                "description": "by Tania Jura, 2023.",
+                "media": "Phantom.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Wellington",
+                "description": "by Tania Jura, 2023.",
+                "media": "Wellington.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Illusion",
+                "description": "by Tania Jura, 2023.",
+                "media": "Illusion.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Iconic",
+                "description": "by Tania Jura, 2023.",
+                "media": "Iconic.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Specter",
+                "description": "by Tania Jura, 2023.",
+                "media": "Specter.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Enigma",
+                "description": "by Tania Jura, 2023.",
+                "media": "Enigma.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Ranchero",
+                "description": "by Tania Jura, 2023.",
+                "media": "Ranchero.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Mystique",
+                "description": "by Tania Jura, 2023.",
+                "media": "Mystique.png",
+                "qr_code": "QR.png"
+            },
+            {
+                "artwork_name": "Eclipse",
+                "description": "by Tania Jura, 2ed023.",
+                "media": "Eclipse.png",
+                "qr_code": "QR.png"
+            }
+        ]
+    },
+    "Shenja Tatschke": {
+        "qr_folder": f"{media_root_folder}/Shenja/QR",
+        "media_folder": f"{media_root_folder}/Shenja/NFTs",
+        # Replace YOUR_PLATFORM with the appropriate platform name.
+        "minted_on": MintedOn.koda,
+
+        "nft_data": [
+            {
+                "artwork_name": "Summer Meltdown",
+                "description": "A boy is eating ice-cream during a heat wave. Hand-drawn digital illustration.",
+                "media": "summer-meltdown.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "Pisces",
+                "description": "A lady being deeply connected with fish-like creatures. The artwork is inspired by the essence of the zodiac sign Pisces. Hand-drawn digital illustration.",
+                "media": "pisces.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "Piano Sprint",
+                "description": "Nude women are running on an infinite row of piano keys, creating music that you can only imagine. Hand-drawn digital illustration.",
+                "media": "piano-sprint.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "Crazy Plant Lady",
+                "description": "A girl who has made ‘buying plants’ her personality takes it to the next level by kissing a carnivorous plant. Hand-drawn digital illustration.",
+                "media": "Crazy-plant-lady.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "AWARENESS 01",
+                "description": "Living in a city can create a feeling of disconnection from nature and source. Through meditation we create that connection within ourselves and become one with everything regardless of our environment. Hand-drawn digital illustration.",
+                "media": "AWARENESS01.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "AWARENESS 02",
+                "description": "Living in a city can create a feeling of being disconnected and trapped. Through meditation we create that connection within ourselves and become one with everything regardless of our environment. Hand-drawn digital illustration.",
+                "media": "AWARENESS02.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "Floating Flamingo",
+                "description": "A girl is having a good time in a pool while matching up with her inflatable swim ring. Hand-drawn digital illustration.",
+                "media": "floating-flamingo.jpg",
+                "qr_code": "download (18).png"
+            },
+            {
+                "artwork_name": "Psychedelic Frogs",
+                "description": "Different psychedelic frogs are blowing their sound bubbles. Hand-drawn digital illustration.",
+                "media": "psychedelic-frogs.jpg",
+                "qr_code": "download (18).png"
+            }
+        ]
     }
+
+
+
 
 
 
