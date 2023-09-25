@@ -3,6 +3,14 @@ import os
 import nft_data
 import re
 from logo_map import logo_map
+from urllib.parse import quote
+
+def sanitize_filename(filename):
+    filename = re.sub(r'[^a-zA-Z0-9\-_]', '_', filename) # replace special characters with _
+    filename = re.sub(r'_+', '_', filename)  # replace multiple underscores with a single one
+    return filename
+
+
 
 
 def generate_html_files(data, clear_output_dir):
@@ -30,12 +38,12 @@ def generate_html_for_nft_data(artist, collection, data):
 
         # Copy media file to media directory and update the path
         old_media_path = os.path.join(data['media_folder'], nft['media'])
-        new_media_name = nft['media'].replace('#', '_')  # modify filename here
+        new_media_name = re.sub(r'[^a-zA-Z0-9.]+', '_', nft['media'])
         new_media_path = os.path.join(
             'media', artist, collection, new_media_name)
         os.makedirs(os.path.dirname(new_media_path), exist_ok=True)
         shutil.copy(old_media_path, new_media_path)
-        template_media_path = f"../../{new_media_path}"
+        template_media_path = f"../../{quote(new_media_path)}"
 
         # Copy QR code to media directory and update the path
         old_qr_path = os.path.join(data['qr_folder'], nft['qr_code'])
@@ -72,7 +80,7 @@ def generate_html_for_nft_data(artist, collection, data):
         html = html.replace('LOGO_IMAGE', additional_image_tag)
 
         # Determine the media type based on the file extension
-        media_ext = os.path.splitext(nft['media'])[1]
+        media_ext = os.path.splitext(nft['media'])[1].lower()
         media_id = "media-content"
         if media_ext in ['.jpg', '.jpeg', '.png', '.gif', '.JPG', '.JPEG', '.PNG', '.GIF', '.webp']:
             media_tag = f'<img id="{media_id}" src="{template_media_path}" alt="{nft["artwork_name"]}" style="width:100%; max-height: 1080px; object-fit: contain;" />'
@@ -85,7 +93,7 @@ def generate_html_for_nft_data(artist, collection, data):
         html = html.replace('MEDIA_CONTENT', media_tag)
 
         # Write the populated HTML to a new file
-        base_html_file_name = nft["artwork_name"].replace("#", "_")
+        base_html_file_name = sanitize_filename(nft["artwork_name"])
         html_file_name = base_html_file_name 
         html_file_path = os.path.join('html_files', artist, f"{html_file_name}.html")
 
